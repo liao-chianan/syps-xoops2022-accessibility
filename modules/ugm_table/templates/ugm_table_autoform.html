@@ -1,0 +1,103 @@
+
+<{$formValidator_code}>
+<script>
+  function check_data(){
+    var f_content = <{$auto_form_head.id}>.importfile.value;
+    var fileext=f_content.substring(f_content.lastIndexOf('.'),f_content.length);
+    fileext1=fileext.toLowerCase();
+    if (fileext!='.xls' <{$auto_form_head.js_v}>){
+      alert('對不起，導入資料格式必須是xls格式文件哦，請您調整格式後重新上傳，謝謝！');
+      return false;
+    }
+    return true;
+  }
+</script>
+
+
+<div><h3><{$auto_form_head.title}></h3></div>
+<form action='<{$auto_form_head.action}>' method='<{$auto_form_head.method}>' id='<{$auto_form_head.id}>' class='<{$auto_form_head.class}>' enctype='<{$auto_form_head.enctype}>' onSubmit='return check_data()'>
+
+<{foreach from=$auto_form key=label item=v}>
+  <{if $label}>
+    <fieldset><legend class="label"><{$label}></legend>
+  <{/if}>  
+  
+  <{foreach from=$v  item=form}>
+    <{if $form.type=="hidden"}>
+      <input type="hidden" name="<{$form.name}>" value="<{$form.value}>">
+    <{else}>
+      <div class="row-fluid" style='height:40px; line-height:40px;'>
+        <div class="span2 text-right">
+          <{$form.text}>
+        </div>
+        <div class="span4">
+          <{if $form.type=="text"}>
+            <input type="text" name="<{$form.name}>" value="<{$form.value}>" class="<{$form.validator}> <{$form.width}>">
+          <{elseif $form.type=="d_file"}>
+            <INPUT type='file' name="<{$form.name}>">
+          <{elseif $form.type=="color"}>
+            <input type="text" name="<{$form.name}>" id="<{$form.name}>" value="<{$form.value}>" class="span8" data-hex="true" >
+          <{elseif $form.type=="textarea"}>
+            <textarea name="<{$form.name}>" class="span12" rows=2><{$form.value}></textarea>
+          <{elseif $form.type=="yesno"}>
+            <label class="radio inline">
+              <input type="radio" name="<{$form.name}>" id="<{$form.name}>1" value="1" <{if $form.value==1}>checked<{/if}> ><{$smarty.const._YES}>
+            </label>
+            <label class="radio inline">
+              <input type="radio" name="<{$form.name}>" id="<{$form.name}>0" value="0" <{if $form.value==0}>checked<{/if}> ><{$smarty.const._NO}>
+            </label>
+          <{elseif $form.type=="file"}>
+            <{$form.form}>
+          <{/if}>
+        </div>
+  
+        <{if $form.type=="file"}>
+          <div class="span6">
+            <{if $form.list}>
+  
+              <div style="width:60px; height:86px; display:inline-block; margin:4px;">
+                <label for="<{$form.name}>0" style="width:60px; height:60px;border:1px dotted gray;" >
+                  <input type="radio" name="<{$form.name}>" id="<{$form.name}>0" value="" <{if $form.value==""}>checked<{/if}>>
+                  <{$smarty.const._MA_TADTHEMES_NONE}>
+                </label>
+              </div>
+  
+              <div style="width:60px; height:86px; display:inline-block; margin:4px;">
+                <label for="<{$form.name}>" style="width:60px; height:60px; background:#000000 url(<{$form.default}>);background-repeat:no-repeat;background-position:left center;border:1px solid gray;background-size: cover;" >
+                  <input type="radio" name="<{$form.name}>" id="<{$form.name}><{$file.files_sn}>" value="<{$form.default}>"  <{if $form.value==$form.default}>checked<{/if}>>
+                </label>
+                  <label class="checkbox" style="font-size:11px;">
+                    <{$smarty.const._MA_TADTHEMES_DEFAULT}>
+                  </label>
+  
+              </div>
+  
+              <{foreach from=$form.list item=file}>
+                <div style="width:60px; height:86px; display:inline-block; margin:4px;">
+                  <label for="<{$form.name}><{$file.files_sn}>" style="width:60px; height:60px; background:#000000 url(<{$file.tb_path}>);background-position:left center;border:1px solid gray;" >
+                    <input type="radio" name="<{$form.name}>" id="<{$form.name}><{$file.files_sn}>" value="<{$file.path}>" onChange="$('.del_<{$form.name}>').show(); $('#del_<{$form.name}><{$file.files_sn}>').hide();" <{if $form.value==$file.path}>checked<{/if}>>
+                  </label>
+                  <label class="checkbox del_<{$form.name}>" style="font-size:11px;" id="del_<{$form.name}><{$file.files_sn}>">
+                    <input type="checkbox" value="<{$file.files_sn}>" name="del_file[<{$file.files_sn}>]"> <{$smarty.const._TAD_DEL}>
+                  </label>
+                </div>
+              <{/foreach}>
+              <div style="clear:both;"></div>
+            <{/if}>
+          </div>
+        <{else}>
+          <{if $form.desc}>
+            <div class="span6 alert alert-info">
+              <{$form.desc}>
+            </div>
+          <{/if}>
+        <{/if}>
+      </div>
+    <{/if}>
+  <{/foreach}>
+  <{if $label}>
+    </fieldset>
+  <{/if}> 
+<{/foreach}>
+<button type="submit" class="btn btn-primary"><{$smarty.const._MA_SAVE}></button>
+</form>

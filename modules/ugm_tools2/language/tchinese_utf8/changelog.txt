@@ -1,0 +1,19 @@
+ugm_tools2 XOOPS工具模組 1.20 （2020-03-23）
+===========================================
+1.更改「ugmUpFiles3.php」
+  //取得檔案
+  $file_handle = new \Verot\Upload\upload($file, "zh_TW");
+
+2.增加判斷資料表「預設值」函式
+  InstallFunction.php -> check_columnDefault($default,$col,$tbl)
+
+
+ugm_tools2 XOOPS工具模組 1.16 （2019-06-07）
+===========================================
+1.增加 tcpdf 6.2.26
+  https://github.com/tecnickcom/tcpdf
+
+===========================================
+ugm_tools2 XOOPS工具模組 1.14 （2019-03-29）
+===========================================
+1.增加連動選單

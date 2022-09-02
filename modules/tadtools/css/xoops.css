@@ -1,0 +1,8 @@
+@import url("fonts.css");
+body {
+  overflow-x: hidden;
+}
+
+#xoops_theme_center_zone{
+  padding-bottom: 3rem;
+}

@@ -1,0 +1,2 @@
+<{$block.main}>
+<a href='javascript: {$this->name}.openAll();' style='font-size:11px;'><{$smarty.const._TAD_EXPAND_ALL}></a> | <a href='javascript: {$this->name}.closeAll();' style='font-size:11px;'><{$smarty.const._TAD_CONTACT_ALL}></a>

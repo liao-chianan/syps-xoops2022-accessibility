@@ -1,0 +1,25 @@
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/modules/tadtools/bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/modules/tadtools/bootstrap/css/bootstrap-responsive.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/modules/tadtools/css/xoops_adm.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/modules/ugm_table/css/module.css" />
+<{$Navigation}>
+
+<{if $auto_form_head}>
+  <!-- 表單 -->
+  <{includeq file="$xoops_rootpath/modules/ugm_table/templates/ugm_table_autoform.html"}>
+<{/if}> 
+
+<{if $table_form_head}>
+  <!-- 表單 -->
+  <{includeq file="$xoops_rootpath/modules/ugm_table/templates/ugm_table_tableform.html"}>
+<{/if}>
+  
+<{if $record_form_head}>
+  <!-- 表單 -->
+  <{includeq file="$xoops_rootpath/modules/ugm_table/templates/ugm_table_recordform.html"}>
+<{/if}>
+
+<{if $column}>
+  <!-- show -->
+  <{includeq file="$xoops_rootpath/modules/ugm_table/templates/ugm_table_show_one.html"}>
+<{/if}>

@@ -1,0 +1,36 @@
+<{$bootstrap}>
+<p>
+<{$toolbar}>
+</p>
+<{$css}>
+<{$content}>
+
+<div class=>
+  <h3><{$DBV.title}></h3> 
+  <div><{$btn}></div>
+  <div id="<{$auto_sort.sort_msg}>"></div>
+  <table class="table">
+    <thead>
+      <tr class='info'>
+      <{foreach from=$column  item=column_title}>
+           <th><{$column_title}></th>
+      <{/foreach}>
+      </tr>
+    </thead>
+    <tbody>
+    <{foreach from=$tbody  key=sn item=tr}>
+      <tr id="tr_<{$sn}>">
+      <{foreach from=$tr  item=td}>
+           <td><{$td}></td>
+      <{/foreach}>
+      </tr>
+    <{/foreach}>
+    </tbody>
+  </table>
+  <{$bar}>
+</div>
+
+
+   
+
+

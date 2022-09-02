@@ -1,0 +1,60 @@
+<{$formValidator_code}>
+
+<script type='text/javascript'>
+  $(document).ready(function(){
+      $('#<{$table_form_head.sort_id}>').sortable({ opacity: 0.6, cursor: 'move', update: function() {
+          var order = $(this).sortable('serialize') + '&action=updateRecordsListings';
+          $.post('<{$table_form_head.sort_url}>', order, function(theResponse){
+              $('#<{$table_form_head.sort_msg}>').html(theResponse);
+          });
+      }
+      });
+  });
+</script>
+
+<div class="bs-example">
+  <h3><{$table_form_head.title}></h3>
+  <form action='<{$table_form_head.action}>' method='<{$table_form_head.method}>' id='<{$table_form_head.id}>' class='<{$table_form_head.class}>' enctype='<{$table_form_head.enctype}>'>
+  <div id="<{$table_form_head.sort_msg}>"></div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th style="width:100px;">標題</th>
+        <th style="width:200px;">標題名稱</th> 
+        <th style="width:100px;">啟用</th> 
+      </tr>
+    </thead>
+    <tbody  id='<{$table_form_head.sort_id}>'>  
+    <{foreach from=$table_form key=sn item=table}> 
+      <tr id="tr_<{$sn}>">
+      <{foreach from=$table  item=form}>
+         <td>         
+           <{if $form.type=="title_num"}>
+             <img src='<{xoAppUrl modules/tadtools/treeTable/images/updown_s.png}>' style='cursor: s-resize;' alt='<{$smarty.const._MA_TREETABLE_SORT_PIC}>' title='<{$smarty.const._MA_TREETABLE_SORT_PIC}>'>&nbsp;&nbsp;<{$form.value}>
+           <{elseif $form.type=="text"}>
+             <input type="text" name="<{$form.name}>" value="<{$form.value}>" class="<{$form.validator}>">
+           <{elseif $form.type=="yesno"}>
+            <label class="radio inline">
+              <input type="radio" name="<{$form.name}>" id="<{$form.name}>1" value="1" <{if $form.value==1}>checked<{/if}> ><{$smarty.const._YES}>
+            </label>
+            <label class="radio inline">
+              <input type="radio" name="<{$form.name}>" id="<{$form.name}>0" value="0" <{if $form.value==0}>checked<{/if}> ><{$smarty.const._NO}>
+            </label>
+          <{/if}>
+          
+         </td>
+      <{/foreach}>
+      </tr> 
+    <{/foreach}>   
+    
+    </tbody>
+  </table>
+  <button type="submit" class="btn btn-primary"><{$smarty.const._MA_SAVE}></button>
+  </form>
+</div>
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+<{$js_code}>
+<script type='text/javascript'>
+  $(document).ready(function(){
+      $('#<{$auto_sort.sort_id}>').sortable({ opacity: 0.6, cursor: 'move', update: function() {
+          var order = $(this).sortable('serialize') + '&action=updateRecordsListings';
+          $.post('<{$auto_sort.sort_url}>', order, function(theResponse){
+              $('#<{$auto_sort.sort_msg}>').html(theResponse);
+          });
+      }
+      });
+  });
+  //刪除記錄確認
+	function op_record_delte_func(sn){
+		var sure = window.confirm("<{$smarty.const._BP_DEL_CHK}>");
+		if (!sure)	return;
+		location.href="<{$xoops_url}>/modules/ugm_table/admin/main.php?op=op_record_delete&sn="+sn;
+	}
+</script>
+<div class="bs-example">
+  <h3><{$DBV.title}></h3> 
+  <div><{$btn}></div>
+  <div id="<{$auto_sort.sort_msg}>"></div>
+  <table class="table">
+    <thead>
+      <tr>
+           <th>啟用</th><th>功能</th>
+      <{foreach from=$column  item=column_title}>
+         <{if $column_title.enable}>
+           <th><{$column_title.title}></th>
+         <{else}>
+           <th style="background-color:red;"><{$column_title.title}></th>
+         <{/if}>
+      <{/foreach}>
+      </tr>
+    </thead>
+    <tbody id='<{$auto_sort.sort_id}>'>
+    <{foreach from=$tbody  key=sn item=tr}>
+      <tr id="tr_<{$sn}>">
+           <td>
+             <img src='<{$xoops_url}>/modules/tadtools/treeTable/images/updown_s.png' style='cursor: s-resize;' alt='<{$smarty.const._MA_TREETABLE_SORT_PIC}>' title='<{$smarty.const._MA_TREETABLE_SORT_PIC}>'>&nbsp;&nbsp;
+             <{if $r_enable.$sn}>
+                <a href="<{$xoops_url}>/modules/ugm_table/admin/main.php?op=op_update_record_enable&enable=0&sn=<{$sn}>"  title="停用" atl="停用">
+                  <img src="<{$xoops_url}>/modules/ugm_table/images/on.png" />
+                </a>
+             <{else}>                
+		            <a href="<{$xoops_url}>/modules/ugm_table/admin/main.php?op=op_update_record_enable&enable=1&sn=<{$sn}>"  title="啟用" atl="啟用">
+                  <img src="<{$xoops_url}>/modules/ugm_table/images/off.png" />
+                </a>
+             <{/if}>
+           </td>
+           <td>
+             <a href="<{$xoops_url}>/modules/ugm_table/admin/main.php?op=op_record_form&sn=<{$sn}>" class="btn btn-info btn-mini" title=""><{$smarty.const._BP_EDIT}></a>
+             <a href="javascript:op_record_delte_func(<{$sn}>);" class="btn btn-danger btn-mini" title=""><{$smarty.const._BP_DEL}></a>
+           </td>
+      <{foreach from=$tr  item=td}>
+         <{if $td.enable}>
+           <td><{$td.value}></td>
+         <{else}>
+           <td style="background-color:#eee;"><{$td.value}></td>
+         <{/if}>
+      <{/foreach}>
+      </tr>
+    <{/foreach}> 
+    
+    </tbody>
+  </table>
+</div>
+
+
+   

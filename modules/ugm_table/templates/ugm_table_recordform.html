@@ -1,0 +1,39 @@
+<{$formValidator_code}>
+
+
+<div class="bs-example">
+  <h3><{$record_form_head.title}></h3>
+  <form action='<{$record_form_head.action}>' method='<{$record_form_head.method}>' id='<{$record_form_head.id}>' class='<{$record_form_head.class}>' enctype='<{$record_form_head.enctype}>'>
+  <table class="table">
+    <thead>
+      <tr>
+        <th style="width:100px;">標題</th>
+        <th style="width:200px;">內容</th> 
+      </tr>
+    </thead>
+    <tbody>  
+    <{foreach from=$record_form key=record_sn item=tr}> 
+      <{foreach from=$tr key=column_sn item=form}>
+      <tr id="tr_<{$record_sn}>">  
+         <td>
+            <{$form.title}>
+         </td>
+         <td>
+             <input type="text" name="<{$form.name}>" value="<{$form.value}>" class="<{$form.validator}>">          
+         </td>
+      </tr> 
+          
+      <{/foreach}>
+    <{/foreach}>   
+    
+    </tbody>
+  </table>
+  <button type="submit" class="btn btn-primary"><{$smarty.const._MA_SAVE}></button>
+  </form>
+</div>
+
+
+
+
+
+
