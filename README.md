@@ -11,3 +11,5 @@
 #底部資訊區的html：site-bottom-info.txt
 
 #政府網站區的html：site-outside-link.txt
+
+#無障礙送檢紀錄：accessibility-record.txt
