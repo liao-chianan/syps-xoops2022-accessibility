@@ -221,3 +221,15 @@ color: #ffffff;
 font-size:0.9rem;
 text-align: center;
 }
+
+/*edit by lcn 20220901 for outside-website-link-logo-picture*/
+img.outsideweb {
+border-width: 1px; 
+border-style: solid; 
+border-radius: 5px;
+border-color: rgb(153, 153, 153); 
+height: 60px; width: 150px; 
+margin-bottom: 0.3em;
+}
+
+

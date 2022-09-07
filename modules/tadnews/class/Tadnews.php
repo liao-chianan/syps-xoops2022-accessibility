@@ -2039,8 +2039,9 @@ class Tadnews
             $option .= "<option value='{$tag_sn}' $selected>{$tag}</option>";
         }
 
-        $select = "<select name='prefix_tag' class='form-control'><option value=''>" . _TADNEWS_PREFIX_TAG . "</option>$option</select>";
-
+        //$select = "<select name='prefix_tag' class='form-control'><option value=''>" . _TADNEWS_PREFIX_TAG . "</option>$option</select>";
+        //edit by lcn 20220902 must have tag while post news
+        $select = "<select name='prefix_tag' class='validate[required] form-control'><option value=''>" . _TADNEWS_PREFIX_TAG . "</option>$option</select>";
         return $select;
     }
 

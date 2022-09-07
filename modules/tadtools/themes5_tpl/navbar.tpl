@@ -86,7 +86,8 @@
 		
             <li>
                 <a title="<{$smarty.const.TF_USER_WELCOME}>">
-                    <{$smarty.const.TF_USER_WELCOME}><{$xoops_name}>
+                    <!--edit by lcn 20220903 show username and userfrom--!>
+                    <!--{$smarty.const.TF_USER_WELCOME}--!><span style="color:blue;font-weight:bold;"><{$xoops_ufrom}><{$xoops_name}></span>
                 </a>
                 <{includeq file="$xoops_rootpath/modules/tadtools/themes5_tpl/menu_user.tpl"}>
             </li>

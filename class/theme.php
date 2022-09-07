@@ -343,6 +343,9 @@ class xos_opal_Theme
                 'xoops_userid'     => $GLOBALS['xoopsUser']->getVar('uid'),
                 'xoops_uname'      => $GLOBALS['xoopsUser']->getVar('uname'),
                 'xoops_name'       => $GLOBALS['xoopsUser']->getVar('name'),
+                //add by lcn 20220904 get user occupation and user office
+                'xoops_ufrom'       => $GLOBALS['xoopsUser']->getVar('user_from'),
+                'xoops_uocc'       => $GLOBALS['xoopsUser']->getVar('user_occ'),
                 'xoops_isadmin'    => $GLOBALS['xoopsUserIsAdmin'],
                 'xoops_usergroups' => $GLOBALS['xoopsUser']->getGroups(),
             ));

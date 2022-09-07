@@ -40,6 +40,11 @@ if ($op === 'main') {
         if ($GLOBALS['xoopsConfig']['usercookie']) {
             $GLOBALS['xoopsTpl']->assign('lang_rememberme', _US_REMEMBERME);
         }
+		//edit by lcn 20220906 redirect with login err 
+	   if (isset($_GET['x_login_err'])) {
+           $GLOBALS['xoopsTpl']->assign('x_login_err','帳號密碼錯誤，請重新輸入或聯絡管理員處理' );
+        }
+		
         $GLOBALS['xoopsTpl']->assign('lang_password', _PASSWORD);
         $GLOBALS['xoopsTpl']->assign('lang_notregister', _US_NOTREGISTERED);
         $GLOBALS['xoopsTpl']->assign('lang_lostpassword', _US_LOSTPASSWORD);

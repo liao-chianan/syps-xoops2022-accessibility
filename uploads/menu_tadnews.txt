@@ -1,1 +1,1 @@
-{"\u672c\u7ad9\u6d88\u606f":"index.php"}
+{"\u672c\u7ad9\u6d88\u606f":"index.php","\u767c\u4f48\u6587\u7ae0":"post.php","\u81ea\u8a02\u9801\u9762":"page.php","\u6211\u7684\u6587\u7ae0":"my_news.php","\u7ba1\u7406\u4ecb\u9762":"admin\/main.php"}

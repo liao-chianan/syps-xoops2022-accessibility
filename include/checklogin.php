@@ -119,9 +119,11 @@ if (false !== $user) {
     $notification_handler = xoops_getHandler('notification');
     $notification_handler->doLoginMaintenance($user->getVar('uid'));
 
-    redirect_header($url, 1, sprintf(_US_LOGGINGU, $user->getVar('uname')), false);
+    //edit by lcn 20220903 login message show username instead of useraccount
+    redirect_header($url, 1, sprintf(_US_LOGGINGU, $user->getVar('name')), false);
 } elseif (empty($redirect)) {
-    redirect_header(XOOPS_URL . '/user.php', 5, $xoopsAuth->getHtmlErrors());
+	//edit by lcn 20220906 redirect with login err 
+    redirect_header(XOOPS_URL . '/user.php?x_login_err=err', 5, $xoopsAuth->getHtmlErrors());
 } else {
     redirect_header(XOOPS_URL . '/user.php?xoops_redirect=' . urlencode($redirect), 5, $xoopsAuth->getHtmlErrors(), false);
 }
