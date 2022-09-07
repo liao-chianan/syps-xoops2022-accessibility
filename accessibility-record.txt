@@ -1,0 +1,156 @@
+指引1.3：可調適
+成功準則1.3.1：資訊與關連性  <<修正完畢，全站網頁架構，依照H1、H2、H3標題層級順序使用>>
+HM1130104E 適當使用巢狀標頭呈現文件結構
+https://www2.syps.tp.edu.tw/modules/ugm_page/index.php?msn=16
+
+請依網頁內容設置標題，並依H1、H2、H3...H6標題層級依序使用，全網站如有相同問題請一併修正。
+
+https://www2.syps.tp.edu.tw/modules/ugm_page/index.php?msn=18同上說明
+https://www2.syps.tp.edu.tw/modules/ugm_page/index.php?msn=19同上說明
+https://www2.syps.tp.edu.tw/modules/ugm_page/index.php?msn=20同上說明
+https://www2.syps.tp.edu.tw/modules/ugm_page/index.php?msn=21同上說明
+https://www2.syps.tp.edu.tw/modules/ugm_page/index.php?msn=6同上說明
+https://www2.syps.tp.edu.tw/modules/ugm_page/index.php?msn=7同上說明
+https://www2.syps.tp.edu.tw/modules/ugm_page/index.php?msn=11同上說明
+https://www2.syps.tp.edu.tw/modules/ugm_page/index.php?msn=17同上說明
+https://www2.syps.tp.edu.tw/modules/ugm_page/index.php?msn=8同上說明
+https://www2.syps.tp.edu.tw/modules/tadnews/index.php?nsn=14同上說明
+https://www2.syps.tp.edu.tw/modules/tadnews/index.php?nsn=5同上說明
+https://www2.syps.tp.edu.tw/modules/tadnews/index.php?nsn=13同上說明
+https://www2.syps.tp.edu.tw/userinfo.php?uid=1同上說明
+https://www2.syps.tp.edu.tw/modules/tadnews/index.php?tag_sn=5
+https://www2.syps.tp.edu.tw/modules/tadnews/index.php?ncsn=1
+https://www2.syps.tp.edu.tw/search.php同上說明
+
+
+
+HM1130107E 使用表格標記來呈現表格資訊  <<修正完畢，補上全站表格TH標籤>>
+https://www2.syps.tp.edu.tw/modules/ugm_page/index.php?msn=4(歷任家長會長表格)
+
+資料表格的行列標題請使用<th>標籤，以利輔具讀取表格時能夠結合標題與資料內容。全網站如有相同問題請一併修正。
+
+----------------------------------------------------------------------------------------------------------
+
+成功準則1.3.3：知覺特徵  <<修正完畢，將換頁符號變更為文字顯示>>
+GN1130300E 針對若無文字項目識別則必須仰賴感官資訊才能理解的內容，提供文字項目識別
+https://www2.syps.tp.edu.tw/modules/tadnews/index.php?tag_sn=5
+
+中央區域下方頁碼兩側的左、右箭頭功能符號，請提供識別文字或Title屬性文字說明。
+
+https://www2.syps.tp.edu.tw/modules/tadnews/index.php?tag_sn=4同上說明
+https://www2.syps.tp.edu.tw/modules/tadnews/index.php?tag_sn=3同上說明
+https://www2.syps.tp.edu.tw/modules/tadnews/index.php?tag_sn=2同上說明
+
+----------------------------------------------------------------------------------------------------------
+
+指引1.4：可辨識  <<修正完畢，移除用不到的checkbox>>
+成功準則1.4.1：色彩使用
+CS1140101E 當使用者介面元件取得焦點時，使用CSS變更其呈現方式
+https://www2.syps.tp.edu.tw/
+
+使用鍵盤操作，焦點遊走至上方導覽工具列定位點之前，會有一個看不到焦點定位的不明核取方塊功能，請檢視問題並修正。
+
+----------------------------------------------------------------------------------------------------------
+成功準則1.4.3：對比值(最小) <<修正完畢，調整全站文字與背景達到至少4.5比1之對比值>>
+GN2140300E 確認文字（及影像文字）與文字後面的背景間，至少有4.5:1的對比值
+https://www2.syps.tp.edu.tw/（中間區域的研習 #FFFFFF與#16B9FF，對比度為2.23:1）（右邊區域標題 #FFFFFF與#CABEFF，對比度為1.7:1）（左邊區域標題 #FFFFFF與#B2D1FF，對比度為1.56:1）（中間區域標題 #FFFFFF與#98E0E2，對比度為1.49:1）
+
+文字顏色與背景色的對比值未達到4.5:1，顯示上未呈現明顯的對比，不利閱讀，建議修正。全網站如有相同問題請一併修正。
+
+https://www2.syps.tp.edu.tw/modules/ugm_page/index.php?msn=17（橘色標題 #FFA500與#FEFEFE，對比度為1.96:1）（右邊搜尋標題 #FFFFFF與#CABEFF，對比度為1.7:1）同上說明
+https://www2.syps.tp.edu.tw/modules/tadnews/index.php?nsn=16（研習 #FFFFFF與#16B9FF，對比度為2.23:1）（右邊搜尋標題 #FFFFFF與#CABEFF，對比度為1.7:1）同上說明
+https://www2.syps.tp.edu.tw/modules/tadnews/index.php?tag_sn=5（灰色本站消息 #999999與#FFFFFF，對比度為2.85:1）（研習 #FFFFFF與#16B9FF，對比度為2.23:1）同上說明
+https://www2.syps.tp.edu.tw/modules/tadnews/index.php?ncsn=1（灰色本站消息 #999999與#FFFFFF，對比度為2.85:1）同上說明
+
+----------------------------------------------------------------------------------------------------------
+
+
+指引2.4：可導覽 <<修正完畢，在所有頁面都補上漏掉的accesskey，並添加前往主要內容區域的tab連結>>
+成功準則2.4.1：跳過區塊
+GN1240100E 在每一個頁面頂端加入一個鏈結，直接連往主要的內容區域
+https://www2.syps.tp.edu.tw/
+
+為方便使用者能直接得知「中央內容區塊」之主要內容，全網站請在頁面頂端統一設置連往主要內容區塊之快速連結。
+
+GN1240102E 在頁面頂端加入鏈結，連到每一個內容區域
+https://www2.syps.tp.edu.tw/modules/ugm_page/index.php?msn=16
+
+網站導覽有提供Alt+C：中央主要內容區的說明，但部份網頁未提供定位點搭配快速鍵設計，無法幫助使用者快速定位及搜尋，請檢視問題並修正，全網站相同問題請一併修正。
+
+https://www2.syps.tp.edu.tw/modules/ugm_page/index.php?msn=18同上說明
+https://www2.syps.tp.edu.tw/modules/ugm_page/index.php?msn=19同上說明
+https://www2.syps.tp.edu.tw/modules/ugm_page/index.php?msn=20同上說明
+https://www2.syps.tp.edu.tw/modules/ugm_page/index.php?msn=21同上說明
+https://www2.syps.tp.edu.tw/modules/ugm_page/index.php?msn=4同上說明
+https://www2.syps.tp.edu.tw/modules/ugm_page/index.php?msn=3同上說明
+https://www2.syps.tp.edu.tw/modules/tadnews/index.php?nsn=14同上說明
+https://www2.syps.tp.edu.tw/modules/tadnews/index.php?nsn=5同上說明
+https://www2.syps.tp.edu.tw/modules/tadnews/index.php?nsn=13同上說明
+
+----------------------------------------------------------------------------------------------------------
+
+成功準則2.4.3：焦點順序 <<修正完畢，變更版面遊走順序為上，左，中，右，下 >>
+GN1240301E 在鏈結、表單控制元件、物件間建立合乎邏輯的跳位順序
+https://www2.syps.tp.edu.tw/
+
+使用鍵盤操作時，遊走順序應從左而右、由上至下的順序移動，請先遊走至左邊區域各連結之後，在遊走至中間區域、右邊區域等順序。
+
+----------------------------------------------------------------------------------------------------------
+
+成功準則2.4.4：鏈結目的(脈絡) <<修正完畢，修正純網址連結為文字連結>>
+GN1240401E 針對脈絡中的鏈結，提供描述鏈結目的的鏈結文字
+https://www2.syps.tp.edu.tw/modules/tadnews/index.php?nsn=14
+
+超連結文字請勿直接使用網址表示，請優先使用易瞭解的敘述文字，讓報讀軟體使用者可以直接理解連結資訊。全網站如有相同問題請一併修正。
+
+https://www2.syps.tp.edu.tw/modules/tadnews/index.php?nsn=16同上說明
+https://www2.syps.tp.edu.tw/modules/tadnews/index.php?nsn=9同上說明
+https://www2.syps.tp.edu.tw/modules/tadnews/index.php?nsn=10同上說明
+
+----------------------------------------------------------------------------------------------------------
+
+成功準則2.4.5：多種方式 <<修正完畢，為網站導覽架構中的各項目補上連結>>
+GN1240500E 提供網站導覽、導覽工具或機制、搜尋功能、網頁清單鏈結等功能，協助使用者尋找內容
+https://www2.syps.tp.edu.tw/modules/ugm_page/index.php?msn=16
+
+網站導覽(SITE MAP)頁面為方便使用者快速瞭解網站架構及內容，請將整體的架構設計可快速連結到所需頁面。
+
+----------------------------------------------------------------------------------------------------------
+
+指引3.2：可預期性 <<修正完畢，_blank的超連結在title加上另開新視窗之提醒>>
+成功準則3.2.2：輸入
+GN1320200E 在會產生脈絡變更的表單控制元件變更生效前，先描述會發生什麼事
+https://www2.syps.tp.edu.tw/
+
+開啟新視窗前，應先告知使用者「另開新視窗」，各項連結開啟新視窗並未提示使用者，建議直接於超連結上加註「另開新視窗」，全網站如有相同問題請一併修正。
+
+https://www2.syps.tp.edu.tw/modules/ugm_page/index.php?msn=20同上說明
+
+----------------------------------------------------------------------------------------------------------
+
+指引3.3：輸入協助 <<修正完畢，取消登入的彈跳輸入選單，改成連結到專屬登入畫面>>
+成功準則3.3.1：識別錯誤
+GN1330100E 提供文字描述以指明未完成的必填欄位
+https://www2.syps.tp.edu.tw/
+
+使用鍵盤操作，焦點遊走至右上方登入次選單之後，無輸入任何帳密就直接開啟登入功能後，會出現登入錯誤的視窗，此時鍵盤焦點應移動至視窗內，讓使用語音報讀軟體的使用者能閱讀內容，且視窗很快就自動消失，使用者無足夠的時間閱讀內容，請一併檢視問題並修正。
+
+https://www2.syps.tp.edu.tw/user.php(開啟點選此處註冊您的新帳號連結之後與會員登入、傳送密碼的訊息視窗)同上說明
+
+
+建議事項 <<修正完畢，補上logo超連結回到首頁>>
+https://www2.syps.tp.edu.tw/
+
+依「政府網站服務管理規範」之網站親和性原則規定，左上方之機關logo，建議使用超連結可以回首頁。 
+
+********************************************************************************************************
+
+指引3.3：輸入協助 成功準則3.3.1：識別錯誤 GN1330100E 提供文字描述以指明未完成的必填欄位
+<<修正完成，使用者未輸入帳號或密碼登入時，彈跳說明視窗改成需要使用者按下確認，確認後導回輸入欄位，並在輸入欄位補上此欄位必填的說明>>
+
+ https://www2.syps.tp.edu.tw/modules/profile/user.php 
+ 使用鍵盤操作，無輸入任何帳密就直接開啟會員登入功能後，會出現登入錯誤的提示視窗，此時鍵盤焦點應移動至視窗內，讓使用語音報讀軟體的使用者能閱讀內容，
+ 且視窗很快就自動消失，使用者無足夠的時間閱讀內容，請一併檢視問題並修正 
+ 
+建議事項：網站親和性原則規定，左上方之機關logo，建議使用超連結可以回首頁。 
+<<修正完成，左上角機關LOGO已補上連結，可直接連回首頁>>
