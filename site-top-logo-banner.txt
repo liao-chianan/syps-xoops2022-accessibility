@@ -1,0 +1,10 @@
+<a href="#xoops_theme_center" id="gotocenter" class="gotocenter" title="移到主要內容" >跳到主要內容</a>
+<noscript>
+您目前的瀏覽器不支援JavaScript! 請參考<a href="/nojs-nav.php">[替代頁面]</a>取得完整資訊!
+<br></noscript>
+<h1>
+<a href="." title="臺北市萬華區雙園國小"><img src="https://www2.syps.tp.edu.tw/uploads/tad_themes/school2022/logo/logo_9_3_GgF.png" alt="臺北市萬華區雙園國民小學" title="臺北市萬華區雙園國民小學" width="50" height="50">
+
+<span style="text-align: left;color: #444444; text-shadow: #fefefe 0.1em 0.1em 0.1em;vertical-align: middle;padding-top: 1px;font-size:2rem">臺北市萬華區雙園國小</span></a>
+
+<span style="text-align: left;color: #444444; text-shadow: #fefefe 0.1em 0.1em 0.1em;vertical-align: middle;padding-top: 1px;font-size:1.1rem">Shuang Yuan Primary School</span></h1>

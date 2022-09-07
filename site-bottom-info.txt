@@ -1,0 +1,75 @@
+<a accesskey="B" href="#xoops_theme_bottom_zone_key" title="底部資訊區" id="xoops_theme_bottom_zone_key" style=font-size: 1rem; ">:::</a><br>
+<span style="line-height: 2rem;"><i class="fa fa-info-circle"></i> 地址：[10860]臺北市萬華區莒光路315號</span>  [<a href="https://goo.gl/maps/nBCwQQdqRu2QgLSYA" target="_blank" title="Google地圖[另開新視窗]">Google Map</a>] <br>
+
+<i class="fa fa-phone"></i>  <span style="line-height: 2rem;">電話：(02)23061893　<i class="fa fa-fax"></i> 傳真：(02)23064375　<i class="fa fa-envelope"></i> 教育局聯絡箱：049 </span><br>
+<span style="line-height: 2rem;"><i class="fa fa-credit-card"></i> 統一編號：04195816　<i class="fa fa-envelope"></i> 電子信箱：mailus@syps.tp.edu.tw</span>
+<br>請用 <a href="https://www.google.com.tw/chrome/browser/desktop/" target="_blank"><i class="fa fa-chrome" aria-hidden="true"></i>
+Chrome</a>、<a href="https://www.mozilla.org/zh-TW/firefox/new/" target="_blank"><i class="fa fa-firefox" aria-hidden="true"></i>
+FireFox</a>或 <i class="fa fa-edge" aria-hidden="true"></i>
+Edge瀏覽器以上獲得最佳瀏覽效果，謝謝！
+
+<br><br>
+<span style="box-shadow:inset 0px 20px 0px -24px #e67a73;
+	background-color:#68d0d4;
+	border-radius:4px;border:1px solid #ffffff;
+	display:inline-block;cursor:pointer;
+	color:#444444;font-size:1rem;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	text-align: center;display:block;
+	text-decoration:none;">
+<!--edit by lcn 20220815最底部著作權聲明--!>
+<span style="
+	background-color:#a5e7f2;
+	border-radius:4px;border:1px solid #ffffff;
+	display:inline-block;cursor:pointer;
+	color:black;font-size:0.9rem;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	text-align: center;opacity: 0.9;
+	text-decoration:none;text-shadow:0px 0px 0px">
+		<a href="/modules/ugm_page/index.php?msn=18">網站安全政策</a></span>
+<span style="
+	background-color:#a5e7f2;
+	border-radius:4px;border:1px solid #ffffff;
+	display:inline-block;cursor:pointer;
+	color:black;font-size:0.9rem;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	text-align: center;opacity: 0.9;
+	text-decoration:none;text-shadow:0px 0px 0px">
+		<a href="/modules/ugm_page/index.php?msn=19">隱私權政策</a></span>
+<span style="
+	background-color:#a5e7f2;
+	border-radius:4px;border:1px solid #ffffff;
+	display:inline-block;cursor:pointer;
+	color:black;font-size:0.9rem;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	text-align: center;opacity: 0.9;
+	text-decoration:none;text-shadow:0px 0px 0px">
+		<a href="/modules/ugm_page/index.php?msn=20">正體字政策</a></span>
+<span style="
+	background-color:#a5e7f2;
+	border-radius:4px;border:1px solid #ffffff;
+	display:inline-block;cursor:pointer;
+	color:black;font-size:0.9rem;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	text-align: center;opacity: 0.9;
+	text-decoration:none;text-shadow:0px 0px 0px">
+		<a href="/modules/ugm_page/index.php?msn=21">著作權聲明</a></span>
+<br>		
+	Copyright © 2022 雙園國小 版權所有 All Rights Reserved<BR>
+	Powered by XOOPS © 2001-2019 Designed by Free CSS Templates	
+</span>

@@ -1,0 +1,27 @@
+<p>
+<a href="https://1999.gov.taipei" target="_blank"><img alt="臺北市民1999專網" class="outsideweb" src="/uploads/ugm_page/image/logo-taipei-1999.jpg" title="臺北市民1999專網[另開新視窗]" /></a> 
+<a href="https://hello.gov.taipei/" target="_blank"> <img alt="HELLO TAIPEI單一陳情" class="outsideweb" src="/uploads/ugm_page/image/logo-hello-taipei.jpg" title="HELLO TAIPEI單一陳情[另開新視窗]" /></a> 
+<a href="https://id.taipei/tpcd/" target="_blank"> <img alt="台北通平台" class="outsideweb" src="/uploads/ugm_page/image/logo-taipei-pass.jpg" title="台北通平台[另開新視窗]" /></a> 
+<a href="https://service.gov.taipei/" target="_blank"> <img alt="台北市民服務大平台" class="outsideweb" src="/uploads/ugm_page/image/logo-service-taipei.jpg" title="台北市民服務大平台[另開新視窗]" /></a> 
+<a href="https://eoc.gov.taipei/" target="_blank"> <img alt="臺北市防災資訊網" class="outsideweb" src="/uploads/ugm_page/image/logo-taipei-disaster-prevention.jpg" title="臺北市防災資訊網[另開新視窗]" /></a> 
+<a href="https://www.gender.tp.edu.tw/" target="_blank"> <img alt="臺北市性別平等教育網" class="outsideweb" src="/uploads/ugm_page/image/logo-taipei-gender-equality.jpg" title="臺北市性別平等教育網[另開新視窗]" /></a> 
+<a href="https://pthg.tp.edu.tw/html/index.php" target="_blank"> <img alt="臺北市本土語言教學資源網" class="outsideweb" src="/uploads/ugm_page/image/logo-taipei-pthg.jpg" title="臺北市本土語言教學資源網[另開新視窗]" /></a> 
+<a href="https://sites.google.com/wses.tp.edu.tw/safe/" target="_blank"> <img alt="臺北市國小學生防身警報器資訊專網" class="outsideweb" src="/uploads/ugm_page/image/logo-taipei-student-safe.jpg" title="臺北市國小學生防身警報器資訊專網[另開新視窗]" /></a> 
+<a href="https://nit.taipei/" target="_blank"> <img alt="臺北市新移民專區" class="outsideweb" src="/uploads/ugm_page/image/logo-new-immigrant-taipei.jpg" title="臺北市新移民專區[另開新視窗]" /></a> 
+<a href="https://cirn.moe.edu.tw/" target="_blank"> <img alt="教育部國中小教學整合平台" class="outsideweb" src="/uploads/ugm_page/image/logo-CIRN.jpg" title="教育部國中小教學整合平台[另開新視窗]" /></a> 
+<a href="http://anshinsubsidy.gov.taipei/" target="_blank"> <img alt="臺北市安心就學補助輕鬆查" class="outsideweb" src="/uploads/ugm_page/image/logo-anshin-taipei.jpg" title="臺北市安心就學補助輕鬆查[另開新視窗]" /></a> 
+<a href="https://fatraceschool.k12ea.gov.tw/" target="_blank"> <img alt="校園食材登錄平台" class="outsideweb" src="/uploads/ugm_page/image/logo-food-education.jpg" title="校園食材登錄平台[另開新視窗]" /></a> 
+<a href="https://passport.fitness.org.tw/" target="_blank"> <img alt="教育部健康體育護照" class="outsideweb" src="/uploads/ugm_page/image/logo-fitness-passport.jpg" title="教育部健康體育護照[另開新視窗]" /></a> 
+<a href="https://cpd.moe.gov.tw/" target="_blank"> <img alt="教育部學校衛生資訊網" class="outsideweb" src="/uploads/ugm_page/image/logo-cpd.jpg" title="教育部學校衛生資訊網[另開新視窗]" /></a> 
+<a href="https://enc.moe.edu.tw/" target="_blank"> <img alt="教育部防治學生藥物濫用資源網" class="outsideweb" src="/uploads/ugm_page/image/logo-enc.jpg" title="教育部防治學生藥物濫用資源網[另開新視窗]" /></a> 
+<a href="https://watersafety.sa.gov.tw/" target="_blank"> <img alt="教育部水域運動安全網" class="outsideweb" src="/uploads/ugm_page/image/logo-water-safety.jpg" title="教育部水域運動安全網[另開新視窗]" /></a> 
+<a href="https://crpd.sfaa.gov.tw/" target="_blank"> <img alt="身心障礙者權利公約" class="outsideweb" src="/uploads/ugm_page/image/logo-crpd.jpg" title="身心障礙者權利公約[另開新視窗]" /></a> 
+<a href="https://12basic.edu.tw/" target="_blank"> <img alt="108課綱資訊網" class="outsideweb" src="/uploads/ugm_page/image/logo-108-12basic.jpg" title="108課綱資訊網[另開新視窗]" /></a> 
+<a href="https://ecare.mohw.gov.tw/" target="_blank"> <img alt="社會安全網" class="outsideweb" src="/uploads/ugm_page/image/logo-ecare.jpg" title="社會安全網[另開新視窗]" /></a> 
+<a href="https://www.gamerating.org.tw/" target="_blank"> <img alt="數位娛樂軟體分級查詢網" class="outsideweb" src="/uploads/ugm_page/image/logo-game-rating.jpg" title="數位娛樂軟體分級查詢網[另開新視窗]" /></a> 
+<a href="https://gpwd.mnd.gov.tw/" target="_blank"> <img alt="政戰資訊服務網" class="outsideweb" src="/uploads/ugm_page/image/logo-gpwd.jpg" title="政戰資訊服務網[另開新視窗]" /></a> 
+<a href="https://stv.naer.edu.tw/" target="_blank"> <img alt="愛學網" class="outsideweb" src="/uploads/ugm_page/image/logo-naer.jpg" title="愛學網[另開新視窗]" /></a> 
+<a href="https://ee.tp.edu.tw/" target="_blank"> <img alt="臺北市學校環境教育中心" class="outsideweb" src="/uploads/ugm_page/image/logo-eetp.jpg" title="臺北市學校環境教育中心[另開新視窗]" /></a> 
+<a href="https://168.motc.gov.tw/" target="_blank"> <img alt="交通安全入口網" class="outsideweb" src="/uploads/ugm_page/image/logo-168-motc.jpg" title="交通安全入口網[另開新視窗]" /></a> 
+<a href="https://www.family.gov.taipei/" target="_blank"> <img alt="臺北市家庭教育中心" class="outsideweb" src="/uploads/ugm_page/image/logo-taipei-family.jpg" title="臺北市家庭教育中心[另開新視窗]" /></a>
+</p>
