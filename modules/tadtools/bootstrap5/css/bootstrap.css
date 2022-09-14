@@ -3096,16 +3096,16 @@ textarea.form-control-lg {
   background-color: #198754;
   border-color: #198754;
 }
-
+/*edit by lcn for homepage news next page color*/
 .btn-info {
   color: #000;
-  background-color: #0dcaf0;
-  border-color: #0dcaf0;
+  background-color: #d9d9d9;
+  border-color: #d9d9d9;
 }
 .btn-info:hover {
-  color: #000;
-  background-color: #31d2f2;
-  border-color: #25cff2;
+  color: #0f2073;
+  background-color: #bababa;
+  border-color: #bababa;
 }
 .btn-check:focus + .btn-info, .btn-info:focus {
   color: #000;

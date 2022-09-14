@@ -1,4 +1,9 @@
-#Xoops Accessibility  Git
+#感謝原作者
+https://github.com/XOOPS
+https://github.com/tad0616
+
+#Xoops Accessibility by lcn 
+#GNU GENERAL PUBLIC LICENSE
 
 #2022年8月中安裝xoops最新版後進行無障礙修正，以取得無障礙2.1版AA標章為目標
 

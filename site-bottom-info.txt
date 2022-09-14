@@ -7,7 +7,9 @@
 Chrome</a>、<a href="https://www.mozilla.org/zh-TW/firefox/new/" target="_blank"><i class="fa fa-firefox" aria-hidden="true"></i>
 FireFox</a>或 <i class="fa fa-edge" aria-hidden="true"></i>
 Edge瀏覽器以上獲得最佳瀏覽效果，謝謝！
-
+<a href="https://accessibility.moda.gov.tw/Applications/Detail?category=20220819115043" title="無障礙網站">
+    <img src="/accessibility-AA-logo.jpg" border="0" width="155" height="60" alt="通過AA檢測等級無障礙網頁檢測" />
+    </a>
 <br><br>
 <span style="box-shadow:inset 0px 20px 0px -24px #e67a73;
 	background-color:#68d0d4;
