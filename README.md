@@ -9,12 +9,12 @@ https://github.com/tad0616
 
 #網站使用的模組：本站消息、UGM自訂頁面、站長工具箱、TAD TOOLS工具包、使用者管理、系統管理、佈景管理、網站地圖(後來還是自己做網站導覽)
 
-#lcn修改過的檔案：edit_by_lcn.txt
+#lcn修改過的檔案：edit_by_lcn.txt https://github.com/liao-chianan/syps-xoops2022-accessibility/blob/main/edit_by_lcn.txt
 
-#頂部自訂區的html：site-top-logo-banner.txt
+#頂部自訂區的html：site-top-logo-banner.txt https://github.com/liao-chianan/syps-xoops2022-accessibility/blob/main/site-top-logo-banner.txt
 
-#底部資訊區的html：site-bottom-info.txt
+#底部資訊區的html：site-bottom-info.txt https://github.com/liao-chianan/syps-xoops2022-accessibility/blob/main/site-bottom-info.txt
 
-#政府網站區的html：site-outside-link.txt
+#政府網站區的html：site-outside-link.txt https://github.com/liao-chianan/syps-xoops2022-accessibility/blob/main/site-outside-link.txt
 
-#無障礙送檢紀錄：accessibility-record.txt
+#無障礙送檢紀錄：accessibility-record.txt https://github.com/liao-chianan/syps-xoops2022-accessibility/blob/main/accessibility-record.txt
