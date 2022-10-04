@@ -4,7 +4,9 @@ define('_TADNEWS_NAME', '本站消息');
 define('_TADNEWS_ALWAYS_TOP', '置頂文章');
 define('_TADNEWS_TODAY_NEWS', '今日文章');
 //edit by lcn 完整文章改成所有文章
-define('_TADNEWS_MORE', '觀看所有文章');
+define('_TADNEWS_MORE', '全部文章');
+//edit by lcn 加入完整篩選標籤
+define('_TADNEWS_ALLTAG', '全部');
 define('_TADNEWS_ADD', '發佈');
 define('_TADNEWS_HOT', '點閱數：');
 define('_TADNEWS_BATCH_TOOLS', '批次管理');

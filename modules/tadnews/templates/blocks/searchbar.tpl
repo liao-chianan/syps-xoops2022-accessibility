@@ -12,7 +12,9 @@
         <{$smarty.const._MB_TADNEWS_BAR_TAG}><{$smarty.const._TAD_FOR}>
     </label>
     <select id="tag_sn<{$block.randStr}>">
-        <option value=""></option>
+        <!--edit by lcn 20220916 show all tag--!>
+        <option value=""><{$smarty.const._TADNEWS_ALLTAG}>
+        </option>
         <{foreach from=$block.tag key=tag_sn item=tag}>
             <option value="<{$tag_sn}>"><{$tag}></option>
         <{/foreach}>

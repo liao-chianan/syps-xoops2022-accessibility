@@ -3,35 +3,47 @@ class/auth/auth_provisionning.php:        //edit by lcn 20220992 for samba AD lo
 class/theme.php:                //add by lcn 20220904 get user occupation and user office
 include/checklogin.php:    //edit by lcn 20220903 login message show username instead of useraccount
 include/checklogin.php:	//edit by lcn 20220906 redirect with login err 
+lcn/lcn-test.php://add by lcn -- fix auto link error cause of stupid gov official document(punctuation next to link)
 modules/profile/user.php:		//edit by lcn 20220906 redirect with login err 
-modules/tad_themes/templates/blocks/vertical_menu.tpl:<!--add by lcn 20220829 判斷target是_blank補上文字說明--!>
 modules/ugm_page/index.php:        <!--edit by lcn 20220829 for accessbility--!>
-modules/tadtools/themes5_tpl/menu_sub.tpl:<!--add by lcn 20220829 for accessbility 補上另開新視窗的提醒title--!>
-modules/tadtools/themes5_tpl/navbar.tpl:    <!-remove by lcn 20220829 for accessbility-!>
+modules/tadnews/language/tchinese_utf8/global.php://edit by lcn 完整文章改成所有文章
+modules/tadnews/language/tchinese_utf8/global.php://edit by lcn 加入完整篩選標籤
+modules/tadnews/language/tchinese_utf8/main.php://edit by lcn 20220815
+modules/tadnews/ajax_list_content.php:                <!--edit by lcn 20220815--!><span style='color:gray;font-size: 0.6rem;'> (<a href='" . XOOPS_URL . "/modules/tadnews/index.php?show_uid={$news['uid']}'>{$news['uid_name']}</a> / {$news['counter']}次閱讀 )</span> {$news['content']}
+modules/tadnews/ajax_list_content.php:// edit by lcn change button text from [more] to chinese
+modules/tadnews/class/Tadnews.php:        //edit by lcn 20220902 must have tag while post news
+modules/tadnews/templates/fragment1.tpl:<!--edit by lcn 20220815--!>
+modules/tadnews/templates/op_tad_news_form.tpl://用js判斷可接受的附檔名by lcn
+modules/tadnews/templates/blocks/searchbar.tpl:    <!--edit by lcn 20220815--!><!--label for="ncsn<{$block.randStr}>">
+modules/tadnews/templates/blocks/searchbar.tpl:        <!--edit by lcn 20220916 show all tag--!>
+modules/tadnews/templates/op_tadnews_list.tpl:<!--edit by lcn 20220829 for accessbility 文章列表--!>
+modules/system/templates/system_search.tpl:<!--add by lcn 20220830 for accessbility--!>
+modules/system/templates/system_search.tpl:			    <!--edit by lcn 20220830 do not show userinfo --!>
+modules/tad_themes/templates/blocks/vertical_menu.tpl:<!--add by lcn 20220829 判斷target是_blank補上文字說明--!>
+modules/tadtools/themes5_tpl/navbar.tpl:    <!-edit by lcn 20220829 for accessbility checkbox display none-!>
 modules/tadtools/themes5_tpl/navbar.tpl:<!--edit by lcn 20220815--!>
 modules/tadtools/themes5_tpl/navbar.tpl:                    <!--edit by lcn 20220903 show username and userfrom--!>
+modules/tadtools/themes5_tpl/menu_sub.tpl:<!--add by lcn 20220829 for accessbility 補上另開新視窗的提醒title--!>
 modules/tadtools/themes5_tpl/theme_type_5.tpl:<!--edit accesskey by lcn 20220829 for accessbility--!>
 modules/tadtools/themes5_tpl/blocks_tpl/profile/profile_userform.tpl:<!--edit by lcn 20220829 for accessbility --!>
 modules/tadtools/themes5_tpl/blocks_tpl/profile/profile_userform.tpl:	<!--edit by lcn 20220906 show login err msg and focus--!>
 modules/tadtools/themes5_tpl/blocks_tpl/system/system_userform.tpl:<!--edit by lcn 20220829 add input placeholder--!>
 modules/tadtools/themes5_tpl/blocks_tpl/system/system_userform.tpl:<!--edit by lcn 20220829 remove register link--!>
 modules/tadtools/themes5_tpl/blocks_tpl/system/system_userform.tpl:<!--edit by lcn 20220829 remove forget password--!>
-modules/tadtools/class/PageBar.php:            //edit by lcn 20220829 for accessbility
-modules/tadtools/class/Utility.php:	   <!--edit by lcn 20220829 change txt color from 999 to 666 for accessbility--!>	
 modules/tadtools/themes_common/blockTitle.tpl:<!--edit by lcn 20220829 change blockTitle from H3 to H2--!>
-modules/system/templates/system_search.tpl:<!--add by lcn 20220830 for accessbility--!>
-modules/system/templates/system_search.tpl:			    <!--edit by lcn 20220830 do not show userinfo --!>
-modules/tadnews/ajax_list_content.php:                <!--edit by lcn 20220815--!><span style='color:gray;font-size: 0.6rem;'> (<a href='" . XOOPS_URL . "/modules/tadnews/index.php?show_uid={$news['uid']}'>{$news['uid_name']}</a> / {$news['counter']}次閱讀 )</span> {$news['content']}
-modules/tadnews/class/Tadnews.php:        //edit by lcn 20220902 must have tag while post news
-modules/tadnews/templates/fragment1.tpl:<!--edit by lcn 20220815--!>
-modules/tadnews/templates/op_tadnews_list.tpl:<!--edit by lcn 20220829 for accessbility 文章列表--!>
-modules/tadnews/templates/blocks/searchbar.tpl:    <!--edit by lcn 20220815--!><!--label for="ncsn<{$block.randStr}>">
-modules/tadnews/language/tchinese_utf8/main.php://edit by lcn 20220815
+modules/tadtools/class/Utility.php:					//edit by lcn 20221001--link with text instead of long-url for accessibilty(some people never obey the post rule)
+modules/tadtools/class/Utility.php://add by lcn -- fix auto link error cause of stupid gov official document from copy paste(fullwidth punctuation next to link)
+modules/tadtools/class/Utility.php:	   <!--edit by lcn 20220829 change txt color from 999 to 666 for accessbility--!>	
+modules/tadtools/class/PageBar.php:            //edit by lcn 20220829 for accessbility
+modules/tadtools/class/TadUpFiles.php:        //edit by lcn 20221001 -- limit upload file type with input accept and js
+modules/tadtools/class/ResponsiveSlides.php:		  //edit by lcn 20220916  slide image information,disable slide image link
+modules/tadtools/bootstrap5/css/bootstrap.css:/*edit by lcn for homepage news next page color*/
 nojs-nav.php://made by lcn 2014
 nojs-nav.php://edit by lcn 20220815
+README.md:#Xoops Accessibility by lcn 
 site-bottom-info.txt:<!--edit by lcn 20220815最底部著作權聲明--!>
 themes/school2022/css/style.css:/*edit by lcn 20220815 for stafftable css*/
 themes/school2022/css/style.css:/*edit by lcn 20220829 for go to center hidden block*/
 themes/school2022/css/style.css:/*edit by lcn 20220901 for outside-website-link-logo-picture*/
-themes/school2022/tpl/logo_wrapper.tpl:                        <!--no logo-wrapper by lcn-->
 themes/school2022/theme.tpl:        <!--edit by lcn 20220829  body才載入bootstrap與模組css/js，加快網頁出現速度 -->
+themes/school2022/tpl/logo_wrapper.tpl:                        <!--no logo-wrapper by lcn-->

@@ -4,6 +4,7 @@
             <{if $slide_kind!=''}>
                 <{includeq file="$xoops_rootpath/modules/tadtools/themes_common/slider/`$slide_kind`.tpl"}>
             <{else}>
+			
                 <{includeq file="$xoops_rootpath/themes/school2022/tpl/slideshow_responsive.tpl"}>
                 <{if $slide_mask}>
                     <img src="<{$slide_mask}>" alt="mask" class="img-fluid" style="width:100%; position:absolute; z-index:2; left:0px; top:0px;">

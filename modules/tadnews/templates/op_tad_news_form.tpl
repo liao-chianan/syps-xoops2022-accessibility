@@ -2,7 +2,24 @@
 <script type="text/javascript" src="<{$xoops_url}>/modules/tadtools/multiple-file-upload/jquery.MultiFile.js"></script>
 <script type="text/javascript" src="<{$xoops_url}>/modules/tadtools/My97DatePicker/WdatePicker.js"></script>
 <script type="text/javascript" src="<{$xoops_url}>/modules/tadtools/mColorPicker/javascripts/mColorPicker.js" charset="UTF-8"></script>
+<script type="text/javascript" language="javascript">
+function checkupfile(sender) {
+//用js判斷可接受的附檔名by lcn
+  var validExts = new Array(".txt", ".odt", ".odp", ".ods", ".pdf", ".jpg", ".png", ".gif", ".jpeg", ".mp3", ".mp4", ".zip", ".7z");
+for (var i = 0; i < sender.files.length; i++)
+{
+ //alert(sender.files[i].name);
+ fileExt = sender.files[i].name.substring(sender.files[i].name.lastIndexOf('.'));
+  if (validExts.indexOf(fileExt) < 0) {
+    alert(fileExt+"檔案類型錯誤，可接受的副檔名僅有：" + validExts.toString());
+    sender.value = null;
+    return false;
+  }
+  else return true;
+}
+}
 
+</script>
 <script type="text/javascript">
     $(document).ready(function() {
         $('#color').mColorPicker({

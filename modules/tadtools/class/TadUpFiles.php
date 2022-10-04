@@ -394,10 +394,13 @@ class TadUpFiles
         }
 
         $require = ($this->require) ? 'validate[required]' : '';
-
+		
+        //edit by lcn 20221001 -- limit upload file type with input accept and js
         $main = "
             $jquery
-            <input type='file' name='{$upname}[]' id='{$id}' $multiple $accept class='form-control $require' style='height: initial;'>
+              
+			<!--input type='file' name='{$upname}[]' id='{$id}' $multiple $accept class='form-control $require' style='height: initial;'--!>
+			<input type='file' name='{$upname}[]' id='{$id}' $multiple accept='.txt,.odt,.odp,.ods,.pdf,.mp4,.mp3,.jpg,.jpeg,.png,.gif,.zip,.7z' class='form-control $require' style='height: initial;' onchange='checkupfile(this);'>
             $permission
             {$list_del_file}
             ";

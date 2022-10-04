@@ -27,12 +27,12 @@
 
 <!-- <{$navbar_pos}> -->
 <nav role="navigation" id="main-nav">
-    <!-remove by lcn 20220829 for accessbility-!>
-    <!-- Mobile menu toggle button (hamburger/x icon) >
-    <input id="main-menu-state" type="checkbox" />
+    <!-edit by lcn 20220829 for accessbility checkbox display none-!>
+    <!-- Mobile menu toggle button (hamburger/x icon) --!>
+    <input id="main-menu-state" type="checkbox" style="display:none">
     <label class="main-menu-btn" for="main-menu-state">
     <span class="main-menu-btn-icon"></span> Toggle main menu visibility
-    </label--!>
+    </label>
     
       
             

@@ -65,9 +65,12 @@ class ResponsiveSlides
 
             $alt = empty($title) ? 'slider image ' . $sn : $title;
             $caption_link = $caption ? "<a href='{$item_content['url']}' {$item_content['target']}>$caption</a>" : '';
+		  
+		  //edit by lcn 20220916  slide image information,disable slide image link
             $all .= "
-                <li>
-                    <a href='{$item_content['url']}' {$item_content['target']}><img src='$image' alt='{$alt}'></a>
+		  
+                <li><img src='$image' alt='{$alt}' title='{$alt}'>
+                    <!--a href='{$item_content['url']}' {$item_content['target']}></a--!>
                     $caption_link
                 </li>
             ";
