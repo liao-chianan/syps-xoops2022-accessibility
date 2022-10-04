@@ -5,9 +5,9 @@ https://github.com/tad0616
 #Xoops Accessibility by lcn   
 #GNU GENERAL PUBLIC LICENSE  
   
-https://www2.syps.tp.edu.tw
-#20220930網站目前已改成雙欄式較易瀏覽，新增部分模組(滑動圖片、網站計數器)
-#行政人員公告容易造成錯誤，未來將進行修正(附檔odt、將純url連結改成文字連結)
+https://www2.syps.tp.edu.tw  
+#20220930網站目前已改成雙欄式較易瀏覽，新增部分模組(滑動圖片、網站計數器)  
+#行政人員公告容易造成錯誤，未來將進行修正(附檔odt、將純url連結改成文字連結)  
 
 #2022年8月中安裝xoops最新版後進行無障礙修正，以取得無障礙2.1版AA標章為目標
 
