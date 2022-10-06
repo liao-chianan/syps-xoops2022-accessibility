@@ -5,6 +5,23 @@ namespace XoopsModules\Tadtools;
 use Xmf\Request;
 use XoopsModules\Tadtools\SyntaxHighlighter;
 
+
+//add by lcn -- fix auto link error cause of stupid gov official document from copy paste(fullwidth punctuation next to link)
+function fix_link_lcn($text_link) {	
+$mark_position = strlen($text_link);
+$chinese_punctuation = array('，','（','「','。','、','：');
+foreach ($chinese_punctuation as $ch_mark) {
+    if((strpos($text_link, $ch_mark) !== false) && ($mark_position > strpos($text_link, $ch_mark))){
+      $mark_position = strpos($text_link, $ch_mark);
+    }
+}
+    $final_link[0] = substr($text_link,0,$mark_position);
+    $final_link[1] = substr($text_link,$mark_position);
+    return $final_link;
+}
+
+
+
 // use XoopsModules\Tadtools\PageBar;
 
 /*
@@ -72,6 +89,10 @@ class Utility
         // Extract existing links and tags
         $value = preg_replace_callback('~(<a .*?>.*?</a>|<.*?>)~i', function ($match) use (&$links) {return '<' . array_push($links, $match[1]) . '>';}, $value);
 
+
+
+
+
         // Extract text links for each protocol
         foreach ((array) $protocols as $protocol) {
             switch ($protocol) {
@@ -79,28 +100,17 @@ class Utility
                 case 'https':$value = preg_replace_callback('~(?:(https?)://([^\s<]+)|(www\.[^\s<]+?\.[^\s<]+))(?<![\.,:])~i', function ($match) use ($protocol, &$links, $attr) {if ($match[1]) {
                         $protocol = $match[1];
                     }
-                        //$link = $match[2] ?: $match[3];return '<' . array_push($links, "<a $attr href=\"$protocol://$link\">$protocol://$link</a>") . '>';}, $value);
+                        
 					//edit by lcn 20221001--link with text instead of long-url for accessibilty(some people never obey the post rule)
-//add by lcn -- fix auto link error cause of stupid gov official document from copy paste(fullwidth punctuation next to link)
-function fix_link_lcn($text_link) {	
-    $mark_position = strlen($text_link);
-    $chinese_punctuation = array('，','（','「','。','、','：');
-    foreach ($chinese_punctuation as $ch_mark) {
-        if((strpos($text_link, $ch_mark) !== false) && ($mark_position > strpos($text_link, $ch_mark))){
-          $mark_position = strpos($text_link, $ch_mark);
-        }
-     }
-    $final_link[0] = substr($text_link,0,$mark_position);
-    $final_link[1] = substr($text_link,$mark_position);
-    return $final_link;
-}
+
 					$link = $match[2] ?: $match[3];return '<' . array_push($links, "<a $attr href=\"$protocol://".fix_link_lcn($link)[0]."\">連結位址</a>".fix_link_lcn($link)[1]) . '>';}, $value);	
+					//$link = $match[2] ?: $match[3];return '<' . array_push($links, "<a $attr href=\"$protocol://$link\">$protocol://$link</a>") . '>';}, $value);
                     break;
                 // case 'mail':$value = preg_replace_callback('~([^\s<]+?@[^\s<]+?\.[^\s<]+)(?<![\.,:])~', function ($match) use (&$links, $attr) {return '<' . array_push($links, "<a $attr href=\"mailto:{$match[1]}\">{$match[1]}</a>") . '>';}, $value);
                 //     break;
                 // case 'twitter':$value = preg_replace_callback('~(?<!\w)[@#](\w++)~', function ($match) use (&$links, $attr) {return '<' . array_push($links, "<a $attr href=\"https://twitter.com/" . ($match[0][0] == '@' ? '' : 'search/%23') . $match[1] . "\">{$match[0]}</a>") . '>';}, $value);
                 //     break;
-                default:$value = preg_replace_callback('~' . preg_quote($protocol, '~') . '://([^\s<]+?)(?<![\.,:])~i', function ($match) use ($protocol, &$links, $attr) {return '<' . array_push($links, "<a $attr href=\"$protocol://{$match[1]}\">{$match[1]}</a>") . '>';}, $value);
+                default:$value = preg_replace_callback('~' . preg_quote($protocol, '~') . '://([^\s<]+?)(?<![\.,:])~i', function ($match) use ($protocol, &$links, $attr) {return '<' . array_push($links, "<a $attr href=\"$protocol://{$match[1]}\">{$match[1]}...</a>") . '>';}, $value);
                     break;
             }
         }
