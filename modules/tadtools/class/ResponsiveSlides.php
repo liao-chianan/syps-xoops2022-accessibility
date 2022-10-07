@@ -67,11 +67,17 @@ class ResponsiveSlides
             $caption_link = $caption ? "<a href='{$item_content['url']}' {$item_content['target']}>$caption</a>" : '';
 		  
 		  //edit by lcn 20220916  slide image information,disable slide image link
+		  //$all .= "
+		  //
+            //    <li><img src='$image' alt='{$content}' title='{$content}'>
+            //        $caption_link
+            //    </li>
+            //";
             $all .= "
 		  
-                <li><img src='$image' alt='{$alt}' title='{$alt}'>
-                    <!--a href='{$item_content['url']}' {$item_content['target']}></a--!>
-                    $caption_link
+                <li><img src='$image' alt='{$content}' title='{$content}'>
+				 <!--img src='$image' alt='{$alt}' title='{$alt}'--!>
+                    <!--a href='{$item_content['url']}' {$item_content['target']}></a--!>              
                 </li>
             ";
 
