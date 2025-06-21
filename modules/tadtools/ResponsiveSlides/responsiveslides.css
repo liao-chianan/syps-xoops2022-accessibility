@@ -221,30 +221,62 @@
 
 .callbacks_nav {
   position: absolute;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.5);
-  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
-  top: 52%;
-  left: 0;
-  opacity: 0.5;
-  z-index: 3;
-  text-indent: -9999px;
-  overflow: hidden;
-  text-decoration: none;
-  height: 61px;
-  width: 38px;
-  background: transparent url("images/themes.gif") no-repeat left top;
-  margin-top: -45px;
+  bottom: 10px;
+  left: 65px; /* 調整這個值來定位您的暫停按鈕，使其不會與導航按鈕重疊 */
+  z-index: 4;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.8rem;
 }
 
 .callbacks_nav:active {
   opacity: 1.0;
 }
 
-.callbacks_nav.next {
-  left: auto;
-  background-position: right top;
-  right: 0;
+.callbacks_nav:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
 }
+
+/*edit by lcn 20250620 slide nav control*/
+
+.callbacks_nav.next {
+  /*left: auto;*/
+  /*right: 0;*/
+  left: 135px; /* 調整這個值讓「下一張」按鈕在「上一張」按鈕旁邊 (假設寬度 38px + 間距) */
+  background-position: right top;
+  right: auto; /* 移除右邊定位 */
+ 
+}
+
+/*以下三段是給暫停按鈕用的*/
+.slider-controls {
+  position: absolute;
+  bottom: 5px;
+  left: 5px; /* 調整這個值來定位您的暫停按鈕，使其不會與導航按鈕重疊 */
+  z-index: 4;
+}
+
+.slider-controls button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.slider-controls button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
 
 .rslides {
   margin: 0 auto;
