@@ -89,7 +89,7 @@ if ('table' === $display_mode) {
                 {$news['enable_txt']}{$news['today_pic']}
                 <a href='" . XOOPS_URL . "/modules/tadnews/{$news['link_page']}?nsn={$news['nsn']}'>{$news['news_title']}</a>
 
-                <!--edit by lcn 20220815--!><span style='color:gray;font-size: 0.6rem;'> (<a href='" . XOOPS_URL . "/modules/tadnews/index.php?show_uid={$news['uid']}'>{$news['uid_name']}</a> / {$news['counter']}次閱讀 )</span> {$news['content']}
+                <!--edit by lcn 20220815 & 20250619--!><span style='color:#404040;font-size: 0.6rem;'> (<a href='" . XOOPS_URL . "/modules/tadnews/index.php?show_uid={$news['uid']}'>{$news['uid_name']}</a> / {$news['counter']}次閱讀 )</span> {$news['content']}
             </td>
         </tr>";
         $total++;
