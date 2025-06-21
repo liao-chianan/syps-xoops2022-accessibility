@@ -47,3 +47,10 @@ themes/school2022/css/style.css:/*edit by lcn 20220829 for go to center hidden b
 themes/school2022/css/style.css:/*edit by lcn 20220901 for outside-website-link-logo-picture*/
 themes/school2022/theme.tpl:        <!--edit by lcn 20220829  body才載入bootstrap與模組css/js，加快網頁出現速度 -->
 themes/school2022/tpl/logo_wrapper.tpl:                        <!--no logo-wrapper by lcn-->
+
+
+modules/tadnews/ajax_list_content.php:                <!--edit by lcn 20220815 & 20250619 修改對比色閱覽次數--!>
+modules/tadtools/class/ResponsiveSlides.php:            <!--edit by lcn 20250619 slide nav control 滑動圖片加上暫停功能--!>
+modules/tadtools/ResponsiveSlides/responsiveslides.css:/*edit by lcn 20250620 slide nav control 滑動圖片加上暫停功能*/
+modules/tadtools/ResponsiveSlides/responsiveslides.js:        // **新增的程式碼開始 add by lcn 20250620 slide nav control 滑動圖片加上暫停功能**
+modules/tadtools/themes5_tpl/navbar.tpl:    <!--edit by lcn 20250619 -- 取消手機版面的點選式隱藏導覽列!>
