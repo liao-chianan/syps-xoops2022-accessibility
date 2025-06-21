@@ -21,8 +21,8 @@
       "random": false,          // Boolean: Randomize the order of the slides, true or false
       "pause": false,           // Boolean: Pause on hover, true or false
       "pauseControls": true,    // Boolean: Pause when hovering controls, true or false
-      "prevText": "Previous",   // String: Text for the "previous" button
-      "nextText": "Next",       // String: Text for the "next" button
+      "prevText": "上一張",   // String: Text for the "previous" button
+      "nextText": "下一張",       // String: Text for the "next" button
       "maxwidth": "",           // Integer: Max-width of the slideshow, in pixels
       "navContainer": "",       // Selector: Where auto generated controls should be appended to, default is after the <ul>
       "manualControls": "",     // Selector: Declare custom pager navigation
@@ -229,6 +229,11 @@
         if (settings.auto) {
 
           startCycle = function () {
+
+            if (rotate) { // 避免在第一次啟動時呼叫 clearInterval(undefined)
+             clearInterval(rotate);
+            }
+
             rotate = setInterval(function () {
 
               // Clear the event queue
@@ -258,6 +263,28 @@
             startCycle();
           }
         };
+
+        // **新增的程式碼開始 add by lcn 20250620 slide nav control**
+        // Add control methods to the jQuery data object
+        $this.data('responsiveSlidesControl', {
+            pause: function () {
+              clearInterval(rotate); // 清除計時器
+              rotate = null; // 將 rotate 設為 null，表示輪播已暫停
+              console.log('ResponsiveSlides: 內部 pause 函式被呼叫，rotate已清除。', rotate); // 新增內部 log
+            },
+            resume: function () {
+              restartCycle();
+              console.log('ResponsiveSlides: 內部 resume 函式被呼叫。'); // 新增內部 log
+            },
+            isPlaying: function () {
+              // 如果 rotate 不為 null 且 auto 為 true，則表示正在播放
+              return settings.auto && rotate !== null;
+            }
+        });
+        // **新增的程式碼結束**
+
+
+
 
         // Pause on hover
         if (settings.pause) {
@@ -308,8 +335,8 @@
         // Navigation
         if (settings.nav) {
           var navMarkup =
-            "<a href='#' class='" + navClass + " prev'>" + settings.prevText + "</a>" +
-            "<a href='#' class='" + navClass + " next'>" + settings.nextText + "</a>";
+            "<a href='#' title='上一張輪播圖' class='" + navClass + " prev'>" + settings.prevText + "</a>" +
+            "<a href='#' title='下一張輪播圖' class='" + navClass + " next'>" + settings.nextText + "</a>";
 
           // Inject navigation
           if (options.navContainer) {
