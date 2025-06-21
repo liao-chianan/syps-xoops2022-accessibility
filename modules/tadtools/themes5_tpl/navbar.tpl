@@ -29,11 +29,12 @@
 <nav role="navigation" id="main-nav">
     <!-edit by lcn 20220829 for accessbility checkbox display none-!>
     <!-- Mobile menu toggle button (hamburger/x icon) --!>
+    <!--
     <input id="main-menu-state" type="checkbox" style="display:none">
     <label class="main-menu-btn" for="main-menu-state">
     <span class="main-menu-btn-icon"></span> Toggle main menu visibility
     </label>
-    
+    --!>
       
             
        
@@ -50,8 +51,9 @@
         <{/if}>
     <{/if}>
 
-
-    <ul id="main-menu" class="sm sm-mint d-md-flex flex-md-wrap">
+    <!--edit by lcn 20250619 --!>
+    <!--ul id="main-menu" class="sm sm-mint d-md-flex flex-md-wrap"--!>
+    <ul id="main-menu" class="sm sm-mint d-md-flex flex-wrap">
         <{if $show_sitename==0 or $show_sitename==''}>
 		
             <li>
