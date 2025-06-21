@@ -117,17 +117,55 @@ class ResponsiveSlides
             <link rel='stylesheet' type='text/css' href='" . XOOPS_URL . "/modules/tadtools/ResponsiveSlides/responsiveslides.css' >
             $jquery
             <script language='javascript' type='text/javascript' src='" . XOOPS_URL . "/modules/tadtools/ResponsiveSlides/responsiveslides.js'></script>
-
-            <script type='text/javascript'>
+            
+            <!--edit by lcn 20250619 slide nav control--!>
+           <script type='text/javascript'>
                 $(document).ready( function(){
-                    jQuery('#{$id}').responsiveSlides({
+                    // 獲取輪播元素的 ID
+                    var sliderId = '{$id}';
+
+                    // 初始化 ResponsiveSlides 輪播
+                    var rslidesInstance = jQuery('#' + sliderId).responsiveSlides({
                         auto: true,
                         pager: false,
                         nav: $show_nav,
                         timeout: $timeout,
-                        pause: true,
-                        pauseControls: true,
+                        pause: false,
+                        pauseControls: false,
                         namespace: 'callbacks'
+                        
+                    });
+
+                    // 獲取對應這個輪播的暫停按鈕
+                    var pauseButton = $('#pause-' + sliderId); // 使用新的動態 ID
+                    var pauseButtonIcon = pauseButton.find('i'); // 找到按鈕內的 i 標籤
+                    var pauseButtonText = pauseButton.find('span'); // 找到按鈕內的 span 標籤
+
+                    // 為暫停按鈕加上擊事件監聽器
+                    pauseButton.on('click', function() {
+                        console.log('暫停按鈕被點擊了！輪播ID:', sliderId); // 新增 log 訊息
+
+                        // 獲取對應輪播的控制物件
+                        var control = jQuery('#' + sliderId).data('responsiveSlidesControl');
+
+                        if (control) {
+                            console.log('找到 responsiveSlidesControl 物件:', control); // 新增 log 訊息
+                            if (control.isPlaying()) {
+                                control.pause();
+                                //$(this).text('播放');
+                                pauseButtonText.text('播放');
+                                pauseButtonIcon.removeClass('fa fa-pause').addClass('fa fa-play');                                
+                                console.log('輪播已暫停。');
+                            } else {
+                                control.resume();
+                                //$(this).text('暫停');
+                                pauseButtonText.text('暫停');
+                                pauseButtonIcon.removeClass('fa fa-play').addClass('fa fa-pause');   
+                                console.log('輪播已播放。');
+                            }
+                        } else {
+                            console.warn('ResponsiveSlides control methods not found for ID: #' + sliderId);
+                        }
                     });
                 });
             </script>
@@ -135,12 +173,28 @@ class ResponsiveSlides
         // }
 
         $main .= "
-        <div class='callbacks'>
+
+        
+        <div class='callbacks'>           
+
+
+
             <ul class='rslides' id='{$id}' style='margin-top: {$margin_top}px;'>
                 $all
             </ul>
+            
+            <!--add by lcn 20250619 slide nav control--!>
+            <div class='slider-controls'>
+           <button  id='pause-{$id}' title='暫停輪播/繼續輪播'> <i class='fa fa-pause'></i> <span>暫停</span></button> </div>
+            </div>
+
+
         </div>
         <div class=\"clearfix\"></div>
+
+            
+
+
         ";
 
         return $main;
