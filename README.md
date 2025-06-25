@@ -14,7 +14,7 @@ https://www2.syps.tp.edu.tw
 #20220930網站目前已改成雙欄式較易瀏覽，新增部分模組(滑動圖片、網站計數器)  
 #行政人員公告容易造成錯誤，未來將進行修正(附檔odt、將純url連結改成文字連結)  
 
-
+#20250612重新送檢，20250619校正部分顏色對比度，加上滑動圖片暫停功能，20250625  再次通過取得標章
 
 #lcn修改過的檔案：edit_by_lcn.txt https://github.com/liao-chianan/syps-xoops2022-accessibility/blob/main/edit_by_lcn.txt
 
